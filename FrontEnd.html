@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using the XMLHttpRequest Object</h2>
+<a href="https://demofile1.txt">link</a>
+
+<p id = "demo">sup</p>
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
+
+<script>
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(what)
+    }
+  };
+  xhttp.open("GET", "http://demofile1.txt", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
